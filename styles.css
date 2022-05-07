@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: san-serif
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /*specifies where the scrolling snaps to */
+    scroll-snap-align: start;
+}
+
+.container{
+    /* if you want vertical scrolling , such as in a carosel, or cards, use 'x'. ' Mandatory' means as soon as you start to scroll, it will try to snap to the point specified in the child element (in this case, 'start').  'Proxcimity' can be used instead, which waits until you scroll closs to the edge, and then snaps the last little bit */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+.one {
+    background-color: rgb(36, 164, 138);
+}
+
+.two{
+    background-color: rgb(211, 79, 79);
+}
+
+.three{
+    background-color: rgb(67, 91, 175);
+}
+
+.four{
+    background-color: rgb(44, 200, 15);
+}
